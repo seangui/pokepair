@@ -1,0 +1,51 @@
+{% extends "base.html" %}
+
+{% block footer_style %}
+    footer{
+        width: 100%;
+        display: flex;
+        justify-content: space-evenly;
+        text-align: center;
+        font-size: clamp(.6rem, 1vw, .8rem);
+        padding: .5em;
+    }
+
+    footer div{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 2px;
+    }
+{% endblock %}
+
+{% block top_content %}
+    <h1>Discover Your Music Profile</h1>
+    <p>Reflected in a Pokemon</p>
+    <div class="images-box">
+        <img class="pokemon-img" src="/static/images/8bit/8b-bulbasaur.png">
+        <img class="pokemon-img" src="/static/images/8bit/8b-charmander.png">
+        <img class="pokemon-img" src="/static/images/8bit/8b-squirtle.png">
+    </div>
+{% endblock %}
+
+{% block middle_content %}
+    <a id="start-btn" class="relativity" href="{{url}}">Click Here to Start</a>
+{% endblock %}
+
+{% block bottom_content %}
+    <h2>Get Paired With a Starter Pokemon</h2>
+    <p>Based on Your Top Monthly Spotify Songs</p>
+{% endblock %}
+
+{% block footer %}
+    <footer>
+        <div>
+            <p>Created By</p>
+            <p>Sean Guiao &amp; Matthew Chun</p>
+        </div>
+    </footer>
+{% endblock %}
+
+
+
+

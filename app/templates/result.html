@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+
+{% block inner_circle_img %}
+    #inner-circle img{
+        max-width: 72%;
+    }
+{% endblock %}
+
+{% block top_content %}
+    <p>Your Spotify Best Reflects</p>
+    <p style="color:white; font-weight:bolder; font-style: italic;">{{pokemon_name}}</p>
+    <p>{{pokemon_name}} Playlist Created By</p>
+    <p style="color:white; font-weight:bolder; font-style: italic;">{{playlist_creator_name}}</p>
+{% endblock %}
+
+{% block middle_content %}
+    <img src= {{image_source}} >
+{% endblock %}
+
+{% block bottom_content %}
+<p>{{description}}</p>
+{% endblock %}
+
